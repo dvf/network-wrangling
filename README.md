@@ -2,10 +2,14 @@
 
 ## Setting up your Environment
 
-- [Cleaning up your terminal] (TODO)
-- [Setting up Python] (TODO)
-- [Setting up and using Poetry] (TODO)
+- [Cleaning up your terminal](cleaning-up-terminal.md)
+- [Setting up Python](setting-up-python.md)
+- [Setting up and using Poetry](setting-up-poetry.md)
 
 ## IDE Setup
-- [PyCharm] (TODO)
-- [VS Code] (TODO) 
+- [PyCharm](ide-pycharm.md)
+- [VS Code](vs-code.md) 
+
+## Warmup Exercises
+- [Opening sockets](exercises/sockets.py)
+- [Should we use threading, or asyncio?](exercises/threading-vs-asyncio.py)
