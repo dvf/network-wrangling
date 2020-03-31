@@ -11,6 +11,5 @@
 - [VS Code](vs-code.md) 
 
 ## Warmup Exercises
-- [How do Virtual Environments work?](virtual-environments.md)
 - [Opening sockets](exercises/sockets.py)
 - [Should we use threading, or asyncio?](exercises/threading-vs-asyncio.py)
