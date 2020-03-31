@@ -1,4 +1,4 @@
-# Network Wrangling Happy Hour (in Python)
+# 🍻⚡️Network Wrangling Happy Hour (in Python) 🐍🍻
 
 ## Setting up your Environment
 
