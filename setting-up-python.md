@@ -20,7 +20,7 @@ When you open your terminal and run `python` like so:
 ...your computer needs to know where to find `python`. You may have many `python`s installed on your computer, so how do you know _which_ one your OS is running? Simple, use `which`:
 
 ```bash
-which python
+$ which python
 /usr/bin/python
 ```
 
@@ -29,7 +29,7 @@ My OS is telling me that when I run `python`, it's using the `python` interprete
 Your terminal has access to a variable called `PATH` which is a _list_ of folders (seperated by `:`s) that are searched for any program you invoke. Here's what my PATH looks like:
 
 ```bash
-echo $PATH
+$ echo $PATH
 /usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin
 ```
 
@@ -56,6 +56,39 @@ As you'll see later, tools like Virtual Environments or `pyenv` are actually jus
 
 # Installing `pyenv`
 
+[pyenv](https://github.com/pyenv/pyenv) is an installation and version manager for Python, similar to Ruby's `rvm`.  It can download new versions of Python and change the version of Python referenced in your `PATH`. 
 
+Follow the instructions on the [pyenv](https://github.com/pyenv/pyenv) as close as you can—there are some subtle steps!
 
+Here's how it works:
 
+``` bash
+# Install Python 3.7.4
+$ pyenv install 3.7.4
+
+# But it won't change your Python interpreter until you tell it to
+$ python --version
+Python 2.7.10
+
+# Let's make a new folder for a project and set it to use a particular version of Python
+$ mkdir my_project && cd my_project
+$ pyenv local 3.7.4
+
+# pyenv now knows to use Python 3.7.4 when in the my_project folder
+$ python --version
+Python 3.7.4
+
+# If you want to change to Python 3.7.4 everywhere, then do
+$ pyenv global 3.7.4
+$ python --version
+Python 3.7.4
+```
+
+You'll notice that `pyenv` modifies your `PATH`. Here's what my PATH looks like after installing `pyenv`:
+
+```bash
+$ echo $PATH
+/Users/dvf/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+```
+
+Once you've installed `pyenv` and a suitable version of Python you're good to go. 🏁
