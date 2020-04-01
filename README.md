@@ -2,7 +2,6 @@
 
 ## Setting up your Environment
 
-- [Cleaning up your terminal](cleaning-up-terminal.md)
 - [Setting up Python](setting-up-python.md)
 - [Setting up and using Poetry](setting-up-poetry.md)
 
